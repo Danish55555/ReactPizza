@@ -7,7 +7,7 @@ function Pizza(props) {
   return (
     <>
       <li className={`pizza ${pizza.soldOut ? 'sold-out' : ''}`}>
-        <img src={getPizzaImgPath(pizza)} alt="image" />
+        <img src={`${pizza.photoName}`} alt="image" />
         <div>
           {' '}
           <h3>{pizza.name}</h3>
